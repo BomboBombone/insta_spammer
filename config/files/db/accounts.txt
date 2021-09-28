@@ -1,0 +1,2 @@
+{'username': 'graceparadise_bag', 'password': 'bonnieclyde', 'proxy': None}
+{'username': 'piccola_alice02', 'password': 'bonnieclyde', 'proxy': None}

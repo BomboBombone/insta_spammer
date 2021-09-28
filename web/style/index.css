@@ -1,0 +1,332 @@
+header {
+    height: 60px;
+    top: 0;
+    background-color: green
+}
+
+body {
+    height: calc(100vh - 110px);
+    background-color: white;
+    /* background-color: #ECF0F1; */
+    font-family: monospace;
+    overflow-x: hidden;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* overflow: hidden; */
+}
+
+.toggle-handle {
+    background-color: white;
+    border: thin rgba(0, 0, 0, .25) solid;
+    margin-top: 0px;
+}
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+img:hover {
+    z-index: 1000;
+    transform: scale(1.2)
+}
+
+.toggle-handle {
+    background-color: white;
+    border: thin rgba(0, 0, 0, .25) solid;
+    margin-top: 0px;
+}
+
+* {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.logo_nam_div {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.logo_nam_div>div>img {
+    max-width: 135px;
+    max-height: 135px;
+}
+
+.logo_nam_div>div>h1 {
+    color: dimgray;
+}
+
+.vertical-center {
+    margin: 0;
+    transform: translateY(35%);
+    font-family: fantasy;
+    font-size: 80px;
+}
+
+.top_btns_tray {
+    background-color: #F06292;
+    max-width: 100%;
+    max-height: 100px;
+    margin-top: 40px;
+}
+
+.top_btns_tray>div {
+    display: flex;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.top_btns_tray > div > button {
+    margin: 0.6%;
+    /* height: 60px; */
+    font-size: 25px;
+    /* width: 300px; */
+}
+
+.top_btns_tray>div>button>img {
+    width: 50px;
+}
+
+.mid {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    /* border: 2px solid; */
+    max-height: 85%;
+}
+
+.mid_left {
+    /* margin: 1%; */
+    overflow: auto;
+    /* border-radius: 20px; */
+    width: 70%;
+    padding: 2%;
+    /* background-color: #F06292; */
+    /* background-color: lightsalmon; */
+    /* box-shadow: 0 4px 15px 0 rgba(169, 158, 158, 0.966); */
+}
+
+.mid_right {
+    /* margin: 1%; */
+    /* border-radius: 20px; */
+    width: 30%;
+    padding: 1%;
+    /* background-color: #F06292; */
+    /* background-color: antiquewhite; */
+    box-shadow: 0 4px 10px 0 rgba(169, 158, 158, 0.966);
+    /* box-shadow: 0 4px 15px 0 rgba(169, 158, 158, 0.966); */
+    /* max-height: 300px; */
+    overflow: hidden;
+}
+
+.mid_right>div:nth-child(2) {
+    overflow: auto;
+    height: 500px;
+}
+
+.horizantal_card {
+    text-align: left;
+}
+
+#dashboard {
+    display: none;
+}
+#account_manager{
+    display: none;
+}
+#settings{
+    display: none;
+}
+#launcher{
+    display: none;
+}
+
+
+
+#settings > .card-row > .card{
+    width: 300px;
+}
+.add_account_swal_div{
+    font-size: 22px;
+}
+.add_account_swal_div > input, .add_account_swal_div > button, .add_account_swal_div > h4 {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+.row > div{
+    margin: 1%;
+}
+
+.popover-body {
+    height: 100px;
+    width: 400px;
+    overflow-y: auto;
+    white-space:pre-wrap;
+}
+.popover{
+    max-width: 500px;
+}
+
+
+.track_activity_div{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2%;
+    background: #EEEEEE;
+    border-radius: 10px;
+    color: darkslategrey;
+}
+
+.track_activity_div > button > img{
+    width: 30px;
+}
+
+.track_activity_div > h3{
+    width: 40%;
+}
+
+.track_activity_div > button{
+    width: 20%;
+}
+
+
+
+
+/* ########################### Add new Account Screen ############################### */
+
+#add_account_screen, #account_manager_screen, #start_screen, #schedular_screen, #track_activities{
+    box-shadow: 0 4px 10px 0 rgba(169, 158, 158, 0.966);
+    padding: 1%;
+    overflow: hidden;
+    height: 800px;
+    overflow: auto;
+    /* max-height: 700px; */
+}
+
+.inputWithLabel{
+    width: 40%; 
+    margin:0 auto;
+    font: none;
+    font-size: 26px;
+}
+
+.inputWithLabel > input{
+    font-size: 22px;
+    text-align: center;
+}
+
+/* ########################### Manage Accounts screen ############################### */
+
+.card{
+    width: 350px;
+    height: 280px;
+    box-shadow: 0 4px 15px 0 rgba(116, 105, 105, 0.966);
+    background-color: #F06292;
+    border-radius: 30px;
+    color: white;
+}
+
+.card > div > img{
+    width: 120px;
+    height: 120px;
+}
+
+.card-row{
+    display: flex;
+    justify-content: center;
+}
+
+.card-row > div{
+    margin:3%
+}
+
+
+/* ########################### Start Screen ############################### */
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
+
+.setting_card{
+    width: 550px;
+    height: 600px;
+    box-shadow: 0 0px 5px 0 rgba(116, 105, 105, 0.966);
+    border-radius: 30px;
+    margin: 1%;
+    overflow: auto;
+}
+
+.setting_card:nth-child(2)>div{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    /* margin-top: 1%; */
+    max-height: 60px;
+    /* padding:5% */
+    margin-top: 1%;
+
+}
+.setting_card:nth-child(2)>div>p{
+    font-size:26px;
+    margin-top: 5px;
+    margin:1%;
+    width: 42%;
+    margin-top: 2%;
+}
+
+.setting_card:nth-child(2)>div>div{
+    margin: 1%;
+}
+
+
+.setting_card:nth-child(2)>div>input{
+    margin:1%
+}
+
+.set_buttons > button{
+
+    font-size: 24px;
+    width: 80%;
+    height: 80px;
+    margin-top: 5%;
+}
+/* ########################### Schedule screen ############################### */
+
+#schedular_screen{
+    overflow: hidden;
+}
+
+/* #schedular_screen > div {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 24px;
+    border: 1px solid grey;
+    margin-top: 3%;
+    text-align: center;
+    height: 550px;
+    overflow: auto;
+} */
+
+
+
+/* ########################### Tracker Screen ############################### */
+
+
+/* ########################### Custom ############################### */
+#comments > .swal-modal { 
+    width: 900px;
+ }
